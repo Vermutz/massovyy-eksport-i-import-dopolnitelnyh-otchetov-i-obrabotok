@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКомандаВыгрузить" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаВыгрузить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выгрузить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКомандаВыгрузитьРасширеннаяПодсказка" id="28"/>
+			</Button>
+			<Button name="ФормаКомандаЗагрузить" id="29">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаЗагрузить</CommandName>
+				<ExtendedTooltip name="ФормаКомандаЗагрузитьРасширеннаяПодсказка" id="30"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ОтборОбработок" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор обработок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор обработок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОтборОбработокРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="ОтборВид" id="43">
+							<DataPath>Объект.ОтборВид</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтборВидКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ОтборВидРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ОтборГруппа" id="46">
+							<DataPath>Объект.ОтборГруппа</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтборГруппаКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ОтборГруппаРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="ОтборНазначение" id="63">
+							<DataPath>Объект.ОтборНазначение</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтборНазначениеКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ОтборНазначениеРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="ОтборМаскаИмени" id="52">
+							<DataPath>Объект.ОтборМаскаИмени</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Маска имени файла</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Используйте * или % для любой последовательности символов, 
+? или _ для одного символа.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОтборМаскаИмениКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ОтборМаскаИмениРасширеннаяПодсказка" id="54"/>
+						</InputField>
+						<CheckBoxField name="ТолькоОпубликованные" id="55">
+							<DataPath>Объект.ТолькоОпубликованные</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Публикация: Используется</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТолькоОпубликованныеКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ТолькоОпубликованныеРасширеннаяПодсказка" id="57"/>
+						</CheckBoxField>
+						<CheckBoxField name="ДобавлятьКСуществующему" id="58">
+							<DataPath>Объект.ДобавлятьКСуществующему</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДобавлятьКСуществующемуКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ДобавлятьКСуществующемуРасширеннаяПодсказка" id="60"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КаталогВыгрузки" id="24">
+			<DataPath>Объект.КаталогВыгрузки</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КаталогВыгрузкиКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="КаталогВыгрузкиРасширеннаяПодсказка" id="26"/>
+			<Events>
+				<Event name="StartChoice">КаталогВыгрузкиНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Группа1" id="1">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="ДополнительныеОбработки" id="3">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ДополнительныеОбработки</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДополнительныеОбработкиКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="ДополнительныеОбработкиКоманднаяПанель" id="5">
+						<ChildItems>
+							<Button name="ДополнительныеОбработкиКомандаЗаполнить" id="22">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаЗаполнить</CommandName>
+								<ExtendedTooltip name="ДополнительныеОбработкиКомандаЗаполнитьРасширеннаяПодсказка" id="23"/>
+							</Button>
+							<Button name="ДополнительныеОбработкиКомандаСброситьОтборы" id="61">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСброситьОтборы</CommandName>
+								<ExtendedTooltip name="ДополнительныеОбработкиКомандаСброситьОтборыРасширеннаяПодсказка" id="62"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДополнительныеОбработкиРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="ДополнительныеОбработкиСтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>ДополнительныеОбработки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеОбработкиСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="ДополнительныеОбработкиСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДополнительныеОбработкиСостояниеПросмотра" id="10">
+						<AdditionSource>
+							<Item>ДополнительныеОбработки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеОбработкиСостояниеПросмотраКонтекстноеМеню" id="11"/>
+						<ExtendedTooltip name="ДополнительныеОбработкиСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДополнительныеОбработкиУправлениеПоиском" id="13">
+						<AdditionSource>
+							<Item>ДополнительныеОбработки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеОбработкиУправлениеПоискомКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="ДополнительныеОбработкиУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ДополнительныеОбработкиНомерСтроки" id="16">
+							<DataPath>Объект.ДополнительныеОбработки.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДополнительныеОбработкиНомерСтрокиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ДополнительныеОбработкиНомерСтрокиРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<InputField name="ДополнительныеОбработкиОбработка" id="19">
+							<DataPath>Объект.ДополнительныеОбработки.Обработка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДополнительныеОбработкиОбработкаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДополнительныеОбработкиОбработкаРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ДополнительныеОбработкиОбъектНазначения" id="34">
+							<DataPath>Объект.ДополнительныеОбработки.ОбъектНазначения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Назначение</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДополнительныеОбработкиОбъектНазначенияКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДополнительныеОбработкиОбъектНазначенияРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<CheckBoxField name="ДополнительныеОбработкиЗагружен" id="31">
+							<DataPath>Объект.ДополнительныеОбработки.Загружен</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДополнительныеОбработкиЗагруженКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ДополнительныеОбработкиЗагруженРасширеннаяПодсказка" id="33"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЭкспортИмпортДополнительныхОтчетовОбработок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗаполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаполнить</Action>
+		</Command>
+		<Command name="КомандаВыгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыгрузить</Action>
+		</Command>
+		<Command name="КомандаЗагрузить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗагрузить</Action>
+		</Command>
+		<Command name="КомандаСброситьОтборы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сбросить отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСброситьОтборы</Action>
+		</Command>
+	</Commands>
+</Form>
